@@ -2,17 +2,32 @@ import React from 'react';
 import ReactDOM from "react-dom";
 import { connect } from "react-redux";
 import random from "../js/random";
-
+import css from "../css/style.css";
 import { Component } from 'react';
+import call from "../index";
 class Body extends Component {
-    componentDidMount() {
-        const script = document.createElement("script");
+    constructor(props) {
+        super(props);
+        this.state = { value: 'coconut' };
 
-        script.src = "../js/random";
-        script.async = true;
-
-        document.body.appendChild(script);
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
+
+    handleChange(event) {
+        this.setState({ value: event.target.value });
+    }
+
+    handleSubmit(event) {
+
+
+
+
+        call(this.state.value);
+        event.preventDefault();
+
+    }
+
     render() {
 
         return (
@@ -24,8 +39,10 @@ class Body extends Component {
                 </div>
 
                 <span id="input" class="input1"  > </span>
-                <input type="number" placeholder="Enter the number here"></input>
-
+                <form onSubmit={this.handleSubmit}>
+                    <input type="number" value={this.state.value} onChange={this.handleChange} placeholder="Enter the number here"></input>
+                    <button type="submit" value="Submit">Enter</button>
+                </form>
             </body>
 
         );

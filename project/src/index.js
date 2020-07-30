@@ -4,7 +4,22 @@ import App from "./components/App";
 import { Provider } from 'react-redux';
 import random from "../src/js/random";
 import thunk from 'redux-thunk';
+import check from "../src/js/calculate"
 import { createStore, applyMiddleware } from 'redux';
+var a = random();
+console.log(a[1]);
+var m;
 ReactDOM.render(<App />, document.querySelector('#root'));
-ReactDOM.render(<span dangerouslySetInnerHTML={random()}></span>, document.getElementById("input"));
+
+ReactDOM.render(<span dangerouslySetInnerHTML={a[0]}></span>, document.getElementById("input"));
+function call(b) {
+
+    var ans = Math.abs(b - a[1]);
+    console.log(ans);
+    m = check(ans);
+    console.log(m);
+
+}
+
+export default call;
 
