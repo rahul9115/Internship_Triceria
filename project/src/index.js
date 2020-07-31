@@ -7,8 +7,10 @@ import thunk from 'redux-thunk';
 import check from "../src/js/calculate";
 import body from "./components/body";
 import { createStore, applyMiddleware } from 'redux';
+
 var a = random();
 console.log(a[1]);
+
 var m;
 
 ReactDOM.render(<App />, document.querySelector('#root'));

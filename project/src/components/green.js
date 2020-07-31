@@ -15,9 +15,12 @@ class green extends Component {
 
     render() {
         return (
+            <div class="container">
+                <div class="color" style={{ backgroundColor: "green" }}>
 
-            <div class="color" style={{ backgroundColor: "green" }}>
-            </div >
+                </div >
+                <div><a href="/">Take up new challenge</a></div>
+            </div>
         );
     }
 
