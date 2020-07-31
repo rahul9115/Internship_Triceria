@@ -26,8 +26,10 @@ class Body extends Component {
 
     handleSubmit(event) {
         M = call(this.state.value);
+        this.setState({ value: "" });
         this.render();
-        event.preventDefault();
+
+
 
     }
     render() {
@@ -41,10 +43,10 @@ class Body extends Component {
                 {M}
 
                 <span id="input" class="input1"  > </span>
-                <form onSubmit={this.handleSubmit} action="/">
-                    <input type="number" value={this.state.value} onChange={this.handleChange} placeholder="Enter the number here"></input>
-                    <button type="submit" value="Submit" >Enter</button>
-                </form>
+
+                <input type="number" value={this.state.value} onChange={this.handleChange} placeholder="Enter the number here"></input>
+                <button onClick={this.handleSubmit} value="Submit" >Enter</button>
+
 
 
             </body >
