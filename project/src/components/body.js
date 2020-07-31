@@ -5,7 +5,13 @@ import random from "../js/random";
 import css from "../css/style.css";
 import { Component } from 'react';
 import call from "../index";
+import Blue from "../components/blue"
+import Intial from "../components/intial";
+
+var M = <Intial />;
+
 class Body extends Component {
+
     constructor(props) {
         super(props);
         this.state = { value: 'coconut' };
@@ -19,34 +25,42 @@ class Body extends Component {
     }
 
     handleSubmit(event) {
-
-
-
-
-        call(this.state.value);
+        M = call(this.state.value);
+        this.render();
         event.preventDefault();
 
     }
-
     render() {
+
+        console.log({ M });
 
         return (
 
             <body>
                 <h1>Welcome to the Game</h1>
-                <div class="color">
-
-                </div>
+                {M}
 
                 <span id="input" class="input1"  > </span>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} action="/">
                     <input type="number" value={this.state.value} onChange={this.handleChange} placeholder="Enter the number here"></input>
-                    <button type="submit" value="Submit">Enter</button>
+                    <button type="submit" value="Submit" >Enter</button>
                 </form>
-            </body>
+
+
+            </body >
 
         );
+        this.render();
     }
+
+
+
+
+
+
+
+
+
 }
 
 

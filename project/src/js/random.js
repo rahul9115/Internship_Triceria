@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import body from "../components/body";
+import blue from "../components/blue"
 
 function createMarkup() {
     var a = Math.floor(Math.random() * 100);

@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from "react-router-dom"
 import Body from "./body";
 import { connect } from "react-redux";
-import Blue from "../components/blue"
-
+import css from "../css/style.css"
 
 
 
@@ -12,25 +11,16 @@ const SurveyNew = () => <h2>SurveyNew</h2>
 const Landing = () => <h2>Landing</h2>
 
 
-class App extends Component {
+class red extends Component {
 
     render() {
         return (
 
-            <div className="container" >
-                <BrowserRouter>
-                    <div>
-
-                        <Route exact path='/' component={Body} />
-
-
-                    </div>
-                </BrowserRouter>
-
+            <div class="color" style={{ backgroundColor: "red" }}>
             </div >
         );
     }
 
 };
-export default App;
+export default red;
 
