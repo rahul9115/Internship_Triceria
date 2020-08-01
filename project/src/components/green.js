@@ -19,6 +19,7 @@ class green extends Component {
                 <div class="color" style={{ backgroundColor: "green" }}>
 
                 </div >
+                <span>Great Job you guessed it right!!!!!</span>
                 <div><a href="/">Take up new challenge</a></div>
             </div>
         );

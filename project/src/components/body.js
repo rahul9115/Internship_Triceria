@@ -39,16 +39,20 @@ class Body extends Component {
         return (
 
             <body>
-                <h1>Welcome to the Game</h1>
-                {M}
+                <div class="container">
+                    <div class="outer">
 
-                <span id="input" class="input1"  > </span>
+                        <h1 class="heading">Welcome to the Game</h1>
+                        <div class="answer">{M}</div>
 
-                <input type="number" value={this.state.value} onChange={this.handleChange} placeholder="Enter the number here"></input>
-                <button onClick={this.handleSubmit} value="Submit" >Enter</button>
+                        <span id="input" class="input1"  > </span>
 
+                        <input class="input1" type="number" value={this.state.value} onChange={this.handleChange} placeholder="Enter the number here"></input>
+                        <button onClick={this.handleSubmit} value="Submit" >Enter</button>
 
+                    </div>
 
+                </div>
             </body >
 
         );

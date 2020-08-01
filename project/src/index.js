@@ -8,7 +8,7 @@ import body from "./components/body";
 import { createStore, applyMiddleware } from 'redux';
 
 var a = random();
-console.log(a[1]);
+console.log("This is the random number", a[1]);
 
 var m;
 

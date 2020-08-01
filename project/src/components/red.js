@@ -16,8 +16,11 @@ class red extends Component {
     render() {
         return (
 
-            <div class="color" style={{ backgroundColor: "red" }}>
-            </div >
+            <div class="container">
+                <div class="color" style={{ backgroundColor: "red" }}>
+                </div >
+                <span>Your Almost there guess a number nearby.</span>
+            </div>
         );
     }
 

@@ -15,9 +15,11 @@ class yellow extends Component {
 
     render() {
         return (
-
-            <div class="color" style={{ backgroundColor: "yellow" }}>
-            </div >
+            <div class="container">
+                <div class="color" style={{ backgroundColor: "yellow" }}>
+                </div >
+                <span>Little more guesses.</span>
+            </div>
         );
     }
 
