@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from "./components/App";
-import { Provider } from 'react-redux';
 import random from "../src/js/random";
 import thunk from 'redux-thunk';
 import check from "../src/js/calculate";
