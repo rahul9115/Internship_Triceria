@@ -8,6 +8,7 @@ import call from "../index";
 import Blue from "../components/blue"
 import Intial from "../components/intial";
 
+import icon from "../assets/img/favicon.ico";
 var M = <Intial />;
 
 class Body extends Component {
@@ -51,6 +52,7 @@ class Body extends Component {
                         <button onClick={this.handleSubmit} value="Submit" >Enter</button>
 
                     </div>
+
 
                 </div>
             </body >
