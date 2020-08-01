@@ -9,14 +9,9 @@
   },
   "scripts": {
     "project": "npm run start --prefix project",
-<<<<<<< HEAD
-    "start":"npm run project",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix project && npm run build "
-=======
-   
-   "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix project && npm run build",
-     "start":"npm run project"
->>>>>>> ed2fe708264d624bb3f51472a937ced9460ef7bb
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix project && npm run build",
+    "start":"npm run project"
+
   },
   "repository": {
     "type": "git",
