@@ -10,7 +10,7 @@
   "scripts": {
     "project": "npm run start --prefix project",
    
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build ",
+   "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix project && npm run build",
      "start":"npm run project"
   },
   "repository": {
