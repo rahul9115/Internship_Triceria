@@ -8,8 +8,8 @@
     "npm": "6.13.4"
   },
   "scripts": {
-    "project": "client": "npm run start --prefix project",
-    "start":"np run project",
+    "project": "npm run start --prefix project",
+    "start":"npm run project",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build "
   },
   "repository": {
