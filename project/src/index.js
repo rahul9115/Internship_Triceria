@@ -9,7 +9,11 @@ import { createStore, applyMiddleware } from 'redux';
 
 var a = random();
 console.log("This is the random number", a[1]);
+<<<<<<< HEAD
 localStorage.setItem("rahul", a[2]);
+=======
+localStorage.setItem("counter10", a[2]);
+>>>>>>> fa0c468eaacc8a1925e37db46aa2e389c6d17bf6
 var m;
 
 ReactDOM.render(<App />, document.querySelector('#root'));
