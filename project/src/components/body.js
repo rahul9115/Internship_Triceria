@@ -26,7 +26,7 @@ class Body extends Component {
 
     handleSubmit(event) {
         M = call(this.state.value);
-        this.setState({ value: "" });
+        this.setState({ value: "    " });
         this.render();
 
 
