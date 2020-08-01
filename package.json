@@ -9,8 +9,9 @@
   },
   "scripts": {
     "project": "npm run start --prefix project",
-    "start":"npm run project",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build "
+   
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build ",
+     "start":"npm run project"
   },
   "repository": {
     "type": "git",
